@@ -1,5 +1,5 @@
 # Node Garage - Nodectl 
-#### Alpha version 0.0.1
+#### Alpha version 0.0.2
 
 Constellation Network Node Administration Utility
 
