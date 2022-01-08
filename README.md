@@ -1,5 +1,5 @@
 # Node Garage - Nodectl 
-#### Version 0.2.0
+#### Version 0.3.1
 
 Constellation Network Node Administration Utility
 
@@ -53,7 +53,7 @@ Options:
     disable-root-ssh | - have nodectl restrict access to your root user
     
     enable-root-ssh  | - have ndoectl re-enable access to your root user  
-      
+
     join    | - join the testnet 2.0 network
 
     health  | - show basic health elements of your Node
