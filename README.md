@@ -5,7 +5,7 @@ Constellation Network Node Administration Utility
 
 ```
 Node Garage / Constellation Network
-NODECTL v0.2.0
+NODECTL v0.3.1
 TESSELLATION v0.0.x
 TESSELLATION Latest v0.0.3
 by netmet
@@ -48,6 +48,12 @@ Options:
 
     restart_only | - restart node services on Node but don't join.
 
+    upgrade-nodectl | - upgrade nodectl to latest version
+    
+    disable-root-ssh | - have nodectl restrict access to your root user
+    
+    enable-root-ssh  | - have ndoectl re-enable access to your root user  
+      
     join    | - join the testnet 2.0 network
 
     health  | - show basic health elements of your Node
