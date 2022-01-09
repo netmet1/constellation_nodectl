@@ -1,11 +1,11 @@
 # Node Garage - Nodectl 
-#### Version 0.3.1
+#### Version 0.3.2
 
 Constellation Network Node Administration Utility
 
 ```
 Node Garage / Constellation Network
-NODECTL v0.3.1
+NODECTL v0.3.2
 TESSELLATION v0.0.x
 TESSELLATION Latest v0.0.3
 by netmet
