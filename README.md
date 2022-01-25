@@ -1,16 +1,16 @@
 # Node Garage - Nodectl 
-#### Version 0.3.3
+#### Version 0.4.0
 
 Constellation Network Node Administration Utility
 
 ```
 Node Garage / Constellation Network
-NODECTL v0.3.3
+NODECTL v0.4.0
 TESSELLATION v0.0.x
-TESSELLATION Latest v0.0.3
+TESSELLATION Latest v0.1.0
 by netmet
 ----------------------
-usage:  sudo nodectl [ help, status, health, sec, price, count, whoami ]
+usage:  sudo nodectl [ help, status, health, sec, price, count, whoami, upgrade-nodectl ]
 
 Options:
 
@@ -39,7 +39,16 @@ Options:
 
     count   | - count number of peers seen on the network
                 and if your system is seen (true/false)
-
+                
+    find    | - Is my IP address found on the network
+                if an ip address <x.x.x.x> is supplied
+                the system will lookup that IP address
+                entered to determine if it is found on
+                the network
+    
+    peers   | - show a list of all IP addresses found
+                on the network.
+                
     whoami  | - show your system's external ip
 
     stop    | - stop node services on Node
@@ -49,10 +58,10 @@ Options:
     restart_only | - restart node services on Node but don't join.
 
     upgrade-nodectl | - upgrade nodectl to latest version
-    
+
     disable-root-ssh | - have nodectl restrict access to your root user
-    
-    enable-root-ssh  | - have ndoectl re-enable access to your root user  
+
+    enable-root-ssh  | - have ndoectl re-enable access to your root user
 
     join    | - join the testnet 2.0 network
 
@@ -86,6 +95,7 @@ Options:
                           BitCoin,
                           Ethereum,
                           Quant Network
+
 
 ```
 
