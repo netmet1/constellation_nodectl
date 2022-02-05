@@ -1,5 +1,5 @@
 # Node Garage - Nodectl 
-#### Version 0.4.2
+#### Version 0.5.0
 
 Constellation Network Node Administration Utility
 
