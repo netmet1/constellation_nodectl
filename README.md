@@ -1,16 +1,16 @@
 # Node Garage - Nodectl 
-#### Version 0.5.0
+#### Version 0.6.1
 
 Constellation Network Node Administration Utility
 
 ```
 Node Garage / Constellation Network
-NODECTL v0.4.2
-TESSELLATION v0.1.0
-TESSELLATION Latest v0.1.0
+NODECTL v0.6.1
+TESSELLATION v0.3.0
+TESSELLATION Latest v0.3.0
 by netmet
 ----------------------
-usage:  sudo nodectl [ help, status, health, sec, price, count, whoami, upgrade-nodectl ]
+usage:  sudo nodectl [ help, status, start, stop, leave, join, health, sec, price, count, find, peers, whoami, check_connection, upgrade-nodectl, version ]
 
 Options:
 
@@ -26,6 +26,8 @@ Options:
 
     help    | show this menu
 
+    version | show version of nodectl
+
     status  | - show the state of the Node's service
               - show if the node has properly joined
                 the Constellation Tessellation TestNet
@@ -37,33 +39,39 @@ Options:
 
     start   | - start node services on Node
 
+    stop    | - stop node services on Node
+
+    join    | - join the testnet 2.0 network
+
+    leave   | - force node to leave cluster
+
     count   | - count number of peers seen on the network
                 and if your system is seen (true/false)
-                
+
     find    | - Is my IP address found on the network
                 if an ip address <x.x.x.x> is supplied
                 the system will lookup that IP address
                 entered to determine if it is found on
                 the network
-    
+
     peers   | - show a list of all IP addresses found
                 on the network.
-                
-    whoami  | - show your system's external ip
 
-    stop    | - stop node services on Node
+    whoami  | - show your system's external ip
 
     restart | - restart node services on Node and join
 
     restart_only | - restart node services on Node but don't join.
 
+    check_connection | - checks the debug api for peer on both the
+                         node performing genesis and the edge node
+                         and reports back status
+
     upgrade-nodectl | - upgrade nodectl to latest version
 
     disable-root-ssh | - have nodectl restrict access to your root user
 
-    enable-root-ssh  | - have ndoectl re-enable access to your root user
-
-    join    | - join the testnet 2.0 network
+    enable-root-ssh  | - have nodectl re-enable access to your root user
 
     health  | - show basic health elements of your Node
               - show the current 15 minute CPU load and
@@ -97,5 +105,5 @@ Options:
                           Quant Network
 
 
-```
 
+```
