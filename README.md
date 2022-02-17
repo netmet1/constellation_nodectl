@@ -5,9 +5,9 @@ Constellation Network Node Administration Utility
 
 ```
 Node Garage / Constellation Network
-NODECTL v0.6.1
-TESSELLATION v0.3.0
-TESSELLATION Latest v0.3.0
+NODECTL v0.6.2
+TESSELLATION v0.4.0
+TESSELLATION Latest v0.4.0
 by netmet
 ----------------------
 usage:  sudo nodectl [ help, status, start, stop, leave, join, health, sec, price, count, find, peers, whoami, check_connection, upgrade-nodectl, version ]
@@ -36,6 +36,10 @@ Options:
               - show latest version of Tessellation
                 detected on the network.
               - show the current nodectl version
+              States: Ready - Joined successfully
+                      API Ready - Ready to Join
+                      Start Completed - Service is up
+                      Shutdown - Service is down
 
     start   | - start node services on Node
 
