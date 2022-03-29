@@ -1,19 +1,23 @@
 # Node Garage - Nodectl 
-#### Version 0.8.0
+#### Version 0.8.1
 
 Constellation Network Node Administration Utility
 
 ```
 
-Node Garage / Constellation Network
-NODECTL v0.8.0
+NNode Garage / Constellation Network
+NODECTL v0.8.1
 TESSELLATION v0.5.0
 TESSELLATION Latest v0.5.0
 by netmet
 ----------------------
 usage:  sudo nodectl [ help [-h], status [-s], start, stop, leave, join, health, sec, price,
-                       count, find, peers, whoami, check_connection [-cc], check_genesis_connection [-cgc],
+                       count, find, peers, whoami, check_connection [-cc], check_source_connection [-csc],
                        upgrade-nodectl, reboot, send_logs [-sl], version [-v] ]
+
+        sudo nodectl check_connection [source] [destination]
+        sudo nodectl find [self | source] [destination]
+
 
 Options:
 
@@ -78,9 +82,9 @@ Options:
                will make sure the Node software does a clean 'leave' to leave
                the network prior to rebooting the system.
 
-    -cgc check_genesis_connection | - checks the debug api for peer on both the
-                                      node performing genesis and the edge node
-                                      and reports back status
+    -csc check_source_connection | - checks the debug api for peer on both the
+                                     node that the edge initially joined to
+                                     and the edge node and reports back status
 
     -cc check_connection | - checks the debug api for peer against
                              the entire network (state channel) you are
@@ -135,7 +139,4 @@ Options:
                           BitCoin,
                           Ethereum,
                           Quant Network
-
-
-
 ```
