@@ -1,12 +1,12 @@
 # Node Garage - Nodectl 
-#### Version 0.8.1
+#### Version 0.9.0
 
 Constellation Network Node Administration Utility
 
 ```
 
 NNode Garage / Constellation Network
-NODECTL v0.8.1
+NODECTL v0.9.0
 TESSELLATION v0.5.0
 TESSELLATION Latest v0.5.0
 by netmet
@@ -69,7 +69,9 @@ Options:
                 on the network.
 
     whoami  | - show your system's external ip
-
+    
+    id      | - show your system's node id address
+    
     restart | - restart node services on Node and join
 
     restart_only | - restart node services on Node but don't join.
