@@ -1,12 +1,12 @@
 # Node Garage - Nodectl 
-#### Version 0.10.0
+#### Version 0.10.1
 
 Constellation Network Node Administration Utility
 
 ```
 
 NNode Garage / Constellation Network
-NODECTL v0.10.0
+NODECTL v0.10.1
 TESSELLATION v0.5.0
 TESSELLATION Latest v0.5.0
 by netmet
@@ -76,7 +76,7 @@ Options:
 
     restart_only | - restart node services on Node but don't join.
 
-    -sl slow_restart | - restart the node with a 600 second delay to
+    -sr slow_restart | - restart the node with a 600 second delay to
                          make sure it is fully off the network in the
                          event you are seeing connection issues or other
 
