@@ -1,14 +1,14 @@
 # Node Garage - Nodectl 
-#### Version 0.10.2
+#### Version 0.10.3
 
 Constellation Network Node Administration Utility
 
 ```
 
 NNode Garage / Constellation Network
-NODECTL v0.10.2
-TESSELLATION v0.5.0
-TESSELLATION Latest v0.5.0
+NODECTL v0.10.3
+TESSELLATION v0.9.0
+TESSELLATION Latest v0.9.0
 by netmet
 ----------------------
 usage:  sudo nodectl [ help [-h], status [-s], start, stop, leave, join, health, sec, price,
