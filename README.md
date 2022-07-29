@@ -1,14 +1,9 @@
-# Node Garage - Nodectl 
-#### Version 0.10.6
+## HELP FILE
 
-Constellation Network Node Administration Utility
-
-```
-
-NNode Garage / Constellation Network
-NODECTL v0.10.6
-TESSELLATION v0.9.0
-TESSELLATION Latest v0.9.0
+Node Garage / Constellation Network
+NODECTL v0.11.0
+TESSELLATION vv0.12.0
+TESSELLATION Latest vv0.12.0
 by netmet
 ----------------------
 usage:  sudo nodectl [ help [-h], status [-s], start, stop, leave, join, health, sec, price,
@@ -27,7 +22,7 @@ Options:
     (all CLI commands options can be accessed through
     this access method) from your computer.
 
-    Above execution with no option is NOT designed for mobile.
+    WARNING: GUI-CLI currently is NOT designed for mobile.
 
     Mobile friendly CLI options:
 
@@ -69,9 +64,9 @@ Options:
                 on the network.
 
     whoami  | - show your system's external ip
-    
+
     id      | - show your system's node id address
-    
+
     restart | - restart node services on Node and join
 
     restart_only | - restart node services on Node but don't join.
@@ -141,4 +136,3 @@ Options:
                           BitCoin,
                           Ethereum,
                           Quant Network
-```
