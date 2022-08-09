@@ -2,17 +2,24 @@
 
 ```
 Node Garage / Constellation Network
-NODECTL v0.11.0
-TESSELLATION vv0.12.0
-TESSELLATION Latest vv0.12.0
+NODECTL v0.12.0
+TESSELLATION v0.13.3
+TESSELLATION Latest v0.13.3
 by netmet
 ----------------------
-usage:  sudo nodectl [ help [-h], status [-s], start, stop, leave, join, health, sec, price,
-                       count, find, peers, whoami, check_connection [-cc], check_source_connection [-csc],
+usage:  sudo nodectl [ help [-h], [-p] <profile_name>, status [-s], start, stop,
+                       leave, join, health, sec, price,
+                       count, find, peers, whoami, list,
+                       check_connection [-cc], check_source_connection [-csc],
                        upgrade-nodectl, reboot, send_logs [-sl], version [-v] ]
 
-        sudo nodectl check_connection [source] [destination]
-        sudo nodectl find [self | source] [destination]
+        sudo nodectl status -p <profile_name>
+        sudo nodectl leave -p <profile_name>
+        sudo nodectl count -p <profile_name>
+        sudo nodectl find -p <profile_name> [self | source] [destination]
+        sudo nodectl check_source_connection -p <profile_name> | help
+        sudo nodectl check_connection -p <profile_name> [source] [destination]
+
 
 
 Options:
@@ -44,6 +51,19 @@ Options:
                       Start Completed - Service is up
                       Shutdown - Service is down
 
+    -p | - required parameter for several commands
+           issue the -p with the name of the profile
+           following the -p flag
+                Requires -p:
+                    - status
+                    - join
+                    - leave
+                    - count
+                    - find
+                    - peers
+                    - check_connection
+                    - check_source_connection
+
     start   | - start node services on Node
 
     stop    | - stop node services on Node
@@ -64,13 +84,21 @@ Options:
     peers   | - show a list of all IP addresses found
                 on the network.
 
+    list    | - show a list of all the profiles
+                currently available on this version
+                of nodectl.
+
     whoami  | - show your system's external ip
 
     id      | - show your system's node id address
+    nodeid  | - show your system's node id address
 
     restart | - restart node services on Node and join
 
     restart_only | - restart node services on Node but don't join.
+
+    -csl check_seedlist | - check the seed list access to see if
+                             your nodeid is present on the seed list
 
     -sr slow_restart | - restart the node with a 600 second delay to
                          make sure it is fully off the network in the
@@ -79,6 +107,10 @@ Options:
     reboot | - acts exactly same as a distribution reboot; however, this command
                will make sure the Node software does a clean 'leave' to leave
                the network prior to rebooting the system.
+
+    -rc reset_cache | - clear out the snapshot cache directory
+                        * this should only be done by advanced users during
+                          troubleshooting or genesis block creation! *
 
     -csc check_source_connection | - checks the debug api for peer on both the
                                      node that the edge initially joined to
@@ -137,4 +169,5 @@ Options:
                           BitCoin,
                           Ethereum,
                           Quant Network
+
 ```
