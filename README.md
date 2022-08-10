@@ -2,9 +2,9 @@
 
 ```
 Node Garage / Constellation Network
-NODECTL v0.12.0
-TESSELLATION v0.13.3
-TESSELLATION Latest v0.13.3
+NODECTL v0.13.0
+TESSELLATION v0.15.0
+TESSELLATION Latest v0.15.0
 by netmet
 ----------------------
 usage:  sudo nodectl [ help [-h], [-p] <profile_name>, status [-s], start, stop,
