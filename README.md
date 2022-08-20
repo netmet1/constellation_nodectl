@@ -2,9 +2,9 @@
 
 ```
 Node Garage / Constellation Network
-NODECTL v0.13.3
-TESSELLATION v0.15.0
-TESSELLATION Latest v0.15.0
+NODECTL v0.14.0
+TESSELLATION v0.16.1
+TESSELLATION Latest v0.16.1
 by netmet
 ----------------------
 usage:  sudo nodectl [ help [-h], [-p] <profile_name>, status [-s], start, stop,
@@ -99,6 +99,8 @@ Options:
 
     -csl check_seedlist | - check the seed list access to see if
                              your nodeid is present on the seed list
+                             
+    -usl update_seedlist | - update the local copy of the seed list
 
     -sr slow_restart | - restart the node with a 600 second delay to
                          make sure it is fully off the network in the
