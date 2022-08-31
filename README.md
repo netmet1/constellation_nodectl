@@ -2,9 +2,9 @@
 
 ```
 Node Garage / Constellation Network
-NODECTL v0.14.1
-TESSELLATION v0.16.1
-TESSELLATION Latest v0.16.1
+NODECTL v0.15.0
+TESSELLATION v0.19.0
+TESSELLATION Latest v0.19.0
 by netmet
 ----------------------
 usage:  sudo nodectl [ help [-h], [-p] <profile_name>, status [-s], start, stop,
@@ -14,7 +14,10 @@ usage:  sudo nodectl [ help [-h], [-p] <profile_name>, status [-s], start, stop,
                        upgrade-nodectl, reboot, send_logs [-sl], version [-v] ]
 
         sudo nodectl status -p <profile_name>
+        sudo nodectl start -p <profile_name>
+        sudo nodectl stop -p <profile_name>
         sudo nodectl leave -p <profile_name>
+        sudo nodectl restart -p <profile_name>
         sudo nodectl count -p <profile_name>
         sudo nodectl find -p <profile_name> [self | source] [destination]
         sudo nodectl check_source_connection -p <profile_name> | help
@@ -56,6 +59,11 @@ Options:
            following the -p flag
                 Requires -p:
                     - status
+                    - start
+                    - stop
+                    - restart
+                    - slow_restart
+                    - restart_only
                     - join
                     - leave
                     - count
@@ -99,7 +107,7 @@ Options:
 
     -csl check_seedlist | - check the seed list access to see if
                              your nodeid is present on the seed list
-                             
+
     -usl update_seedlist | - update the local copy of the seed list
 
     -sr slow_restart | - restart the node with a 600 second delay to
@@ -171,5 +179,4 @@ Options:
                           BitCoin,
                           Ethereum,
                           Quant Network
-
 ```
