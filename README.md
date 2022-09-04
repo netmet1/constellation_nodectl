@@ -2,7 +2,7 @@
 
 ```
 Node Garage / Constellation Network
-NODECTL v0.15.2
+NODECTL v0.15.3
 TESSELLATION v0.21.0
 TESSELLATION Latest v0.21.0
 by netmet
