@@ -1,15 +1,12 @@
-## HELP FILE
-
-```
 Node Garage / Constellation Network
-NODECTL v0.15.3
-TESSELLATION v0.21.0
-TESSELLATION Latest v0.21.0
+NODECTL v0.16.0
+TESSELLATION v0.22.1
+TESSELLATION Latest v0.22.1
 by netmet
 ----------------------
 usage:  sudo nodectl [ help [-h], [-p] <profile_name>, status [-s], start, stop,
                        leave, join, health, sec, price,
-                       count, find, peers, whoami, list,
+                       count, find, peers, whoami, list, change-ssh-port <port>
                        check_connection [-cc], check_source_connection [-csc],
                        upgrade-nodectl, reboot, send_logs [-sl], version [-v] ]
 
@@ -122,6 +119,8 @@ Options:
                         * this should only be done by advanced users during
                           troubleshooting or genesis block creation! *
 
+    -cls clear_logs | - clear logs older than 7 or 30 days, or all logs
+
     -csc check_source_connection | - checks the debug api for peer on both the
                                      node that the edge initially joined to
                                      and the edge node and reports back status
@@ -138,11 +137,18 @@ Options:
                              that the EN sees verses the Nodes (Peers) the
                              SN sees.  Both should see the same Peers.
 
-    upgrade-nodectl | - upgrade nodectl to latest version
+    upgrade_nodectl | - upgrade nodectl to latest version
 
-    disable-root-ssh | - have nodectl restrict access to your root user
+    disable_root_ssh | - have nodectl restrict access to your root user
 
-    enable-root-ssh  | - have nodectl re-enable access to your root user
+    enable_root_ssh  | - have nodectl re-enable access to your root user
+
+    change_ssh_port <port> | - change the port number used to access your
+                               Node via the SSH protocol.  The port number
+                               should be between 1024 and 65535.  Please be
+                               careful not to use a port already in use or
+                               that might be used by the Node for various
+                               API access.  Default well known port = 22
 
     -sl send_logs   |  - create a tarball of your log files for diagnosis
                          will offer option to upload for the developers
@@ -179,4 +185,3 @@ Options:
                           BitCoin,
                           Ethereum,
                           Quant Network
-```
