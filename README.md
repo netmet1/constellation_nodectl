@@ -1,8 +1,7 @@
 ```
-Node Garage / Constellation Network
-NODECTL v0.16.0
-TESSELLATION v0.22.1
-TESSELLATION Latest v0.22.1
+NODECTL v0.17.1
+TESSELLATION v0.23.1
+TESSELLATION Latest v0.23.1
 by netmet
 ----------------------
 usage:  sudo nodectl [ help [-h], [-p] <profile_name>, status [-s], start, stop,
@@ -47,10 +46,9 @@ Options:
               - show latest version of Tessellation
                 detected on the network.
               - show the current nodectl version
-              States: Ready - Joined successfully
-                      API Ready - Ready to Join
-                      Start Completed - Service is up
-                      Shutdown - Service is down
+              States: Initial, ReadyToJoin, StartingSession,SessionStarted,
+                      ReadyToDownload,WaitingForDownload,DownloadInProgress,
+                      Observing,Ready,Leaving,Offline,ApiNotReady
 
     -p | - required parameter for several commands
            issue the -p with the name of the profile
