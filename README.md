@@ -1,5 +1,5 @@
 ```
-NODECTL v0.17.1
+NODECTL v0.18.0
 TESSELLATION v0.23.1
 TESSELLATION Latest v0.23.1
 by netmet
@@ -135,6 +135,8 @@ Options:
                              This command will use compare the Nodes (Peers)
                              that the EN sees verses the Nodes (Peers) the
                              SN sees.  Both should see the same Peers.
+
+    -sns show_node_state  | - show a list of known Node states
 
     upgrade_nodectl | - upgrade nodectl to latest version
 
