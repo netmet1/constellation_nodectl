@@ -1,14 +1,15 @@
 ```
-NODECTL v0.18.2
-TESSELLATION v0.23.1
-TESSELLATION Latest v0.23.1
+NODECTL v1.0.0
+TESSELLATION v0.25.1
+TESSELLATION Latest v0.25.1
 by netmet
 ----------------------
 usage:  sudo nodectl [ help [-h], [-p] <profile_name>, status [-s], start, stop,
-                       leave, join, health, sec, price,
+                       leave, join, health, sec, price, show_node_states [-sns],
                        count, find, peers, whoami, list, change-ssh-port <port>
                        check_connection [-cc], check_source_connection [-csc],
-                       upgrade-nodectl, reboot, send_logs [-sl], version [-v] ]
+                       reboot, send_logs [-sl], version [-v],
+                       install, upgrade, upgrade-nodectl ]
 
         sudo nodectl status -p <profile_name>
         sudo nodectl start -p <profile_name>
@@ -24,15 +25,11 @@ usage:  sudo nodectl [ help [-h], [-p] <profile_name>, status [-s], start, stop,
 
 Options:
 
-    If run without an optional variable
-    you will be able to install and upgrade
-    your Node through a CLI_GUI type experience
-    (all CLI commands options can be accessed through
-    this access method) from your computer.
-
-    WARNING: GUI-CLI currently is NOT designed for mobile.
-
     Mobile friendly CLI options:
+
+    upgrade    | upgrade Tessellation version
+    install    | install Tessellation - Turn your bare metal or
+                 VPS into a Validator Node
 
     -h help    | show this menu
 
@@ -92,10 +89,16 @@ Options:
                 currently available on this version
                 of nodectl.
 
+    log <type>    | - show logs for requested log type
+                      - nodectl
+                      - app
+                      - http
+
     whoami  | - show your system's external ip
 
-    id      | - show your system's node id address
-    nodeid  | - show your system's node id address
+    id                  | - show your system's node id address
+    nodeid              | - show your system's node id address
+    export_private_key  | - show your p12's private key
 
     restart | - restart node services on Node and join
 
