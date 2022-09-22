@@ -1,7 +1,7 @@
 ```
-NODECTL v1.1.1
-TESSELLATION v0.25.1
-TESSELLATION Latest v0.25.1
+NODECTL v1.2.0
+TESSELLATION v0.26.0
+TESSELLATION Latest v0.26.0
 by netmet
 ----------------------
 usage:  sudo nodectl [ help [-h], [-p] <profile_name>, status [-s], start, stop,
@@ -89,10 +89,18 @@ Options:
                 currently available on this version
                 of nodectl.
 
-    log <type>    | - show logs for requested log type
-                      - nodectl
-                      - app
-                      - http
+    log <type> <grep> -f  | - show logs for requested log type
+                              types =  - nodectl
+                                       - app
+                                       - http
+                           grep = grep on word
+
+                           -f follow  (ctrl-c to break out)
+                           example)
+                           To show the nodectl log and grep out the "join" with
+                           a follow
+                           nodectl log nodectl join -f
+
 
     whoami  | - show your system's external ip
 
@@ -189,3 +197,4 @@ Options:
                           BitCoin,
                           Ethereum,
                           Quant Network
+```
