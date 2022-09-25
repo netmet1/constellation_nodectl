@@ -1,7 +1,7 @@
 ```
-NODECTL v1.3.0
-TESSELLATION v0.26.0
-TESSELLATION Latest v0.26.0
+NODECTL v1.3.1
+TESSELLATION v0.27.0
+TESSELLATION Latest v0.27.0
 by netmet
 ----------------------
 usage:  sudo nodectl [ help [-h], [-p] <profile_name>, status [-s], start, stop,
