@@ -1,5 +1,5 @@
 ```
-NODECTL v1.3.1
+NODECTL v1.3.2
 TESSELLATION v0.27.0
 TESSELLATION Latest v0.27.0
 by netmet
