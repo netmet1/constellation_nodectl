@@ -1,8 +1,9 @@
 ```
-NODECTL v1.3.2
+Node Garage / Constellation Network
+NODECTL v1.4.0
 TESSELLATION v0.27.0
-TESSELLATION Latest v0.27.0
-by netmet
+
+by netmet @netmet72
 ----------------------
 usage:  sudo nodectl [ help [-h], [-p] <profile_name>, status [-s], start, stop,
                        leave, join, health, sec, price, show_node_states [-sns],
@@ -33,7 +34,10 @@ Options:
 
     -h help    | show this menu
 
-    -v version | show version of nodectl
+    -v version        | show version of nodectl
+    -cv check_version | show versions current and latest
+                        versions of nodectl and Tessellation
+                        and whether they match
 
     -s status  | - show the state of the Node's service
               - show if the node has properly joined
