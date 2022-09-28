@@ -1,4 +1,3 @@
-```
 Node Garage / Constellation Network
 NODECTL v1.5.3
 TESSELLATION v0.28.0
@@ -9,8 +8,8 @@ usage:  sudo nodectl [ help [-h], [-p] <profile_name>, status [-s], start, stop,
                        leave, join, health, sec, price, show_node_states [-sns],
                        count, find, peers, whoami, list, change-ssh-port <port>
                        check_connection [-cc], check_source_connection [-csc],
-                       reboot, send_logs [-sl], version [-v],
-                       install, upgrade, upgrade-nodectl ]
+                       reboot, send_logs [-sl], version [-v], check_versions [-cv],
+                       install, upgrade, upgrade-nodectl, auto_restart [<disable> <check_pid> ]
 
         sudo nodectl status -p <profile_name>
         sudo nodectl start -p <profile_name>
@@ -171,6 +170,14 @@ Options:
                          to access va transfer.sh
                          file name = <your-node-ip-address>_logs.tar.gz
 
+    auto_restart <disable> <check_pid>   |  Starts a background nodectl service that will
+                                            keep an eye on the network and restart your
+                                            services if they go offline.
+
+                                            auto_restart disable - turns this service off
+                                            auto_restart check_pid - checks if it is running
+
+
     health  | - show basic health elements of your Node
               - show the current 15 minute CPU load and
                 if WARNING or LOW
@@ -201,4 +208,3 @@ Options:
                           BitCoin,
                           Ethereum,
                           Quant Network
-```
