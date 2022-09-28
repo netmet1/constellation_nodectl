@@ -217,10 +217,10 @@ Options:
 ```
 # TESTNET 2.0
 ## RELEASE v1.5.3
-
+Please download using `wget` v1.5.3
 ```
 Node Garage / Constellation Network
-NODECTL v1.6.0
+NODECTL v1.5.3
 TESSELLATION v0.28.0
 
 by netmet @netmet72
