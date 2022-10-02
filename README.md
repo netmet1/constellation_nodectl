@@ -1,5 +1,5 @@
 # MAINNET 2.0
-## RELEASE v1.7.1
+## RELEASE v1.7.2
 
 TestNet 2.0 Node Operators please refer to the **TestNet** section at the end of this readme.
 > https://github.com/netmet1/constellation_testnet_nodectl
