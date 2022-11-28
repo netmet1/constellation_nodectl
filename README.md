@@ -218,4 +218,12 @@ Options:
                           BitCoin,
                           Ethereum,
                           Quant Network
+                          
+    market  | Do a lookup on the top 10 market
+              makers in the Crypto industry and
+              print out brief report.  Note: If
+              Constellation Network is not in the
+              top 10 at the current moment in time
+              it will be added to the report in its
+              current position.
 ```
