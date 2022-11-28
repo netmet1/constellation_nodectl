@@ -1,17 +1,18 @@
 # MAINNET 2.0
-## RELEASE v1.8.1
+## RELEASE v1.11.7
 
 TestNet 2.0 Node Operators please refer to the **TestNet** section at the end of this readme.
 > https://github.com/netmet1/constellation_testnet_nodectl
 
 ```
-by netmet @netmet72
+@netmet72
 ----------------------
 usage:  sudo nodectl [ help [-h], [-p] <profile_name>, status [-s], start, stop,
                        leave, join, health, sec, price, show_node_states [-sns],
                        count, find, peers, whoami, list, change-ssh-port <port>
                        check_connection [-cc], check_source_connection [-csc],
                        reboot, send_logs [-sl], version [-v], check_versions [-cv],
+                       clear_logs [-cls], clear_uploads [-cul],
                        install, upgrade, upgrade-nodectl, auto_restart [<disable> <check_pid> ]
 
         sudo nodectl status -p <profile_name>
@@ -20,7 +21,7 @@ usage:  sudo nodectl [ help [-h], [-p] <profile_name>, status [-s], start, stop,
         sudo nodectl leave -p <profile_name>
         sudo nodectl restart -p <profile_name>
         sudo nodectl count -p <profile_name>
-        sudo nodectl find -p <profile_name> [self | source] [destination]
+        sudo nodectl find -p <profile_name> [self | -s <source>] [ -d <destination>]
         sudo nodectl check_source_connection -p <profile_name> | help
         sudo nodectl check_connection -p <profile_name> [source] [destination]
 
@@ -49,6 +50,11 @@ Options:
               - show latest version of Tessellation
                 detected on the network.
               - show the current nodectl version
+              - show the current cluster session verses node session
+              - if the sessions do not match, the node is not connected
+                properly.  Even if the Node is in Ready State, this does
+                NOT mean the Node is connected to the network.
+
               States: Initial, ReadyToJoin, StartingSession,SessionStarted,
                       ReadyToDownload,WaitingForDownload,DownloadInProgress,
                       Observing,Ready,Leaving,Offline,ApiNotReady
@@ -135,7 +141,8 @@ Options:
                         * this should only be done by advanced users during
                           troubleshooting or genesis block creation! *
 
-    -cls clear_logs | - clear logs older than 7 or 30 days, or all logs
+    -cls clear_logs    | - clear logs older than 7 or 30 days, or all logs
+    -cul clear_uploads | - clear uploads directory older than 7 or 30 days, or all logs
 
     -csc check_source_connection | - checks the debug api for peer on both the
                                      node that the edge initially joined to
