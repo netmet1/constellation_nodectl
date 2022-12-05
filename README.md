@@ -1,5 +1,5 @@
 # MAINNET 2.0
-## NODECT - RELEASE v1.11.7
+## NODECT - RELEASE v1.12.0
 
 TestNet 2.0 Node Operators please refer to the **TestNet** section at the end of this readme.
 > https://github.com/netmet1/constellation_testnet_nodectl
@@ -24,6 +24,7 @@ usage:  sudo nodectl [ help [-h], [-p] <profile_name>, status [-s], start, stop,
         sudo nodectl find -p <profile_name> [self | -s <source>] [ -d <destination>]
         sudo nodectl check_source_connection -p <profile_name> | help
         sudo nodectl check_connection -p <profile_name> [source] [destination]
+        sudo nodectl clear_files -t [ logs | backups | uploads ]
 
 
 
@@ -37,8 +38,8 @@ Options:
 
     -h help    | show this menu
 
-    -v version        | show version of nodectl
-    -cv check_version | show versions current and latest
+    -v version         | show version of nodectl
+    -cv check_versions | show versions current and latest
                         versions of nodectl and Tessellation
                         and whether they match
 
