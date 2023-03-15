@@ -9,5 +9,5 @@
   "mainnet": {
     "version": "v1.12.0",
     "upgrade": false,
-  }
+  },
 }
