@@ -4,10 +4,10 @@
   ],
   "testnet": {
     "version": "v2.0.2",
-    "upgrade": true
+    "upgrade": "True"
   },
   "mainnet": {
     "version": "v1.12.0",
-    "upgrade": false
+    "upgrade": "False"
   },
 }
