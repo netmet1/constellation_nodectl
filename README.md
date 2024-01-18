@@ -1,5 +1,13 @@
-# MAINNET 2.0
-## NODECT - RELEASE v1.12.0
+# IMPORTANT
+The offical open sourced GitHub repo for **nodectl** has moved
+https://github.com/StardustCollective/nodectl
+
+*Thank you for all your support*
+
+---
+
+## MAINNET 2.0
+### NODECT - RELEASE v1.12.0
 
 TestNet 2.0 Node Operators please refer to the **TestNet** section at the end of this readme.
 > https://github.com/netmet1/constellation_testnet_nodectl
